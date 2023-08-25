@@ -1,0 +1,7 @@
+Leetcode 401
+1. 遍历hour
+    1. 遍历minute
+    2. 利用binary,if bin(hour).count('1') + bin(minute).count('1') == turnedOn
+    3. 往结果中加入f"{hour}:{minute:02d}"
+2. 返回结果
+  
