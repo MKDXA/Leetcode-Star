@@ -1,0 +1,10 @@
+Leetcode 415
+1. num1,num2反向切片
+2. 短num补上0,使num1和num2长度相等
+3. 以num1/num2长度遍历
+    1. int(num1[i]) + int(num2[i]) + carry
+    2. 考虑余数carry:carry = number_sum // 10
+    3. 往result加入处理完的number_sum,作为一个位: str(number_sum % 10)
+4. 处理后若仍有carry
+    1. 同样加入到result
+5. 由于经历过反向切片,返回结果需要再切回来
