@@ -1,0 +1,9 @@
+Leetcode 405
+1. num为0时返回0
+2. 设置十六进制的map = '0123456789abcdef',利用index
+3. 如果num为负数,则由于num的范围加上2 ** 32
+4. 当num大于0时,设置每一位的数字
+    1. digit = num % 16
+    2. num = (num - digit) // 16
+    3. result += str(map[digit])
+5. 返回result的反向切片
