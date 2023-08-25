@@ -1,0 +1,4 @@
+Leetcode 1
+1. 创建字典,用enumerate让nums产生(number:index),题目要求返回index
+2. target-number的值如果能在字典中找到即为成功,返回[index1, index2]
+3. 如果没有,考虑到字典中只有一个数也有可能成功,将number给予字典的index位
