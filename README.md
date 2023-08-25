@@ -1,2 +1,2 @@
-# MKD1
+# Leetcode Record
 The first base.
