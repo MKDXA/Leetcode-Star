@@ -1,0 +1,6 @@
+Leetcode 455
+1. g和s需要用sort排序
+2. 原理是当s[i] >= g[j]时满足,count+1
+   
+ps.可用(while和0的组合)代替for循环
+   即便是不满足,index_s也需要对下一项检索,所以index_s += 1在while的公共区域
