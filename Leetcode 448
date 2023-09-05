@@ -1,0 +1,4 @@
+Leetcode 448
+
+1. 因为最大的数字对应总长度,所以长度是关键 set(completed nums) - set(nums)
+   set用于应对重复的list,例如[1, 1], 缺的是2
