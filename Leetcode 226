@@ -1,0 +1,4 @@
+Leetcode 226
+1. 左右反转二叉树,要求返回root,在root为[]时返回[],return root
+2. 左右互换,需要同时写 root.left, root.right = root.right, root.left
+3. 将root.left和root.right分别迭代,最后return root
