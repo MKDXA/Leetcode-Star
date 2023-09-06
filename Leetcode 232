@@ -1,7 +1,7 @@
 Leetcode 232
 1. stack基础问题,用两个stacks实现first-in-first-out基础功能push, pop, peek, empty
 2. init: 两个stacks, self.in_stack = []   self.out_stack = []
-3. push: self.in_stack.append(x)
+3. push: 因为是first-in-first-out, 是从in_stack加入,self.in_stack.append(x)
 4. pop: 由于是first-in-first-out, 首先要确保peek-前项功能存在
         self.peek()
         return self.out_stack.pop()
