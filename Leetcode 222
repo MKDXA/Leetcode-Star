@@ -1,0 +1,6 @@
+Leetcode 222
+1. 找寻Tree中所有的Node数目
+2. 左右做方法,设置depth,当node存在时说明层数也存在,depth += 1,然后将node移动至node.left和node.right
+3. 方法实例化后,将root.left和root.right放入
+4. 当左右深度相等时,表明是完全Binary Tree, node个数是2的次方,pow(2, left_depth + 1) - 1, 减去一是由于root只有一个
+5. 如果不相等, 需要(左右分别迭代原函数) + 1, 加一是由于迭代中没有带上root
