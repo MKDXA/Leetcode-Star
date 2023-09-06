@@ -1,0 +1,10 @@
+Leetcode 225
+1. stack基础问题,要求first-in-last-out,用one queue实现基础功能push, pop, top, empty
+2. init: self.q = deque()
+3. push: 由于是first-in-last-out,需要popleft
+   self.q.append(x)
+   补全: for _ in range(len(self.q)) - 1):
+            self.q.append(self.q.popleft())
+4. pop: self.q.popleft()
+5. top: self.q[0]
+6. empty: len(self.q) == 0
