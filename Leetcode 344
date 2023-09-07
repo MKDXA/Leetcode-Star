@@ -1,0 +1,7 @@
+Leetcode 344
+1. 反转list中的string
+2. 由于题目中要求不能用return,可以直接s[:] = s[::-1]倒置切片
+3. 方法二: 以中心为轴,左右start和end互换位置
+           for i in range(len(s) // 2):
+               s[i], s[- i - 1] = s[-i - 1], s[i]   
+           其中s[- i - 1]是由于i的起点是0, 而反转后直接是从-1开始的, 应为-(i + 1)
