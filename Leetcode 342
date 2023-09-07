@@ -1,0 +1,4 @@
+Leetcode 342
+1. 判断num是否为4的次方
+2. 首先确保n是正数, 同时用log(num, 4).is_integer()判断  
+   is_integer()判断log结果是否为整数
