@@ -1,0 +1,7 @@
+Leetcode 374
+1. 1到n猜数字, 比答案大是-1, 比答案小是1,正好是答案是0
+2. 本质上是另一种形式的low, mid, high, 唯一的区别是设立了result = guess(mid)
+   由于只有一个数, mid是具体的数而非index
+   因此当result > 0, 说明是1, 小于答案, low移动至mid + 1
+         result < 0, 说明是0, 大于答案, high移动至mid - 1
+         else: 说明mid正好就是答案, 返回mid
