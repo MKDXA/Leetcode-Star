@@ -1,0 +1,6 @@
+Leetcode 383
+1. 字符串a和字符串b, 判断a是否被包含在b内
+2. 可以用Counter统计各字符出现的次数, 如果a中出现字符的频率与b中字符频率相交的部分正好为a频率, 则说明a确实被包含于b
+3. 无需将string转为list,直接用from collections import Counter引出Counter魔法方法
+4. 如果Counter(a) & Counter(b) == Counter(a), return True
+5. 全局return False
