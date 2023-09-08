@@ -1,2 +1,5 @@
 Leetcode 389
-1. 
+1. s和t两个string字符串,找出t比s多出的字符
+2. 字符串之间比较差异的常见方法之一就是用Counter函数统计
+3. 因为t比s长, 所以用i遍历t
+   在遍历过程中,代表各个字符串的i搭配count函数, 一旦s.count(i) != t.count(i), 说明t中多出的字符出现了, 直接return发现的字符i 
