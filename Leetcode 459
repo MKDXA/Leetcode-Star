@@ -8,4 +8,6 @@ Leetcode 459
                = Head + 2 * LetterRepeat(k-1)Times + Tail
                = Head + Repeat(2k - 2)Times + Tail
    不难看出,combination中重复了复数次
+   combination.""join( (s[1:], s[:-1]) )
 4. 如果s仍能在combination中存在, 则为True
+   return s in combination
