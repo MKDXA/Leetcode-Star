@@ -1,0 +1,11 @@
+Leetcode 459
+* 原理暂时未知
+1. 判断字符串s中各个字符的出现频率是否相等
+2. 数学原理,不需考虑字符出现的顺序
+   combination = s[1:] + s[:-1]
+3. s[1:]没有head, s[:-1]没有tail, 当字符出现k次时, 为了填上head和tail, 出现次数变为k-1
+   combination = (Head + LetterRepeat(k - 1)Times) + (LetterRepeat(k-1)Times + Tail)
+               = Head + 2 * LetterRepeat(k-1)Times + Tail
+               = Head + Repeat(2k - 2)Times + Tail
+   不难看出,combination中重复了复数次
+4. 如果s仍能在combination中存在, 则为True
