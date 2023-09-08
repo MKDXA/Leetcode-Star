@@ -1,0 +1,8 @@
+Leetcode 482
+1. 由于head部分允许不填满k,所以分为head和tail两部分
+2. 首先可用replace函数去除所有dash, s = s.replace('-', ' ')
+3. 获得分组 head = len(s) % k, 建立列表group
+4. 如果head存在, group先将head后部加入 group.append(s[:head])
+5. 然后考虑后半部分, 以k作为step大小,将一组答案装入group, for i in range(head, len(s), k):
+                                         group.append(s[i : i+k])
+6. 最后用dash连接并将所有字母转为大写字母 return '-'.join(group).upper()
