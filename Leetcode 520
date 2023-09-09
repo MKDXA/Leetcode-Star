@@ -1,0 +1,7 @@
+Leetcode 520
+1. 判断字符串, 三种情况为True: 全大写,全小写,首字母大写其他全小写
+2. 进行大分类,如果首字母是大写,则要保证remain全是大写或者小写
+              如果首字母是小写,则要保证remain全是小写
+              remain = word[1:]
+3. while word[0] == word[0].upper()
+4. while word[0] == word[0].lower()
