@@ -1,2 +1,4 @@
 Leetcode 521
-1. 
+1. 题目要求两个字符串中uncommon的最长长度
+2. 要求if a == b: return -1
+3. 其余情况,直接返回a和b中的最长长度 return max(len(a), len(b))
