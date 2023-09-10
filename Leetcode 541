@@ -1,0 +1,7 @@
+Leetcode 541
+1. 字符串中将每2k个字符的k个数字反转
+2. 首先将str(s)换成list格式
+3. 依题意反转即可: s[i : i+k] = s[i:i+k][::-1]
+4. 返回将list重新拼为string
+   用join将str拼为string
+   ''.join(s)
