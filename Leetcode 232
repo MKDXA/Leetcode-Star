@@ -5,7 +5,7 @@ Leetcode 232
 4. pop: 由于是first-in-first-out, 首先要确保peek-前项功能存在
         self.peek()
         return self.out_stack.pop()
-5. peek: 首先当stack只有一项,即if not self.out_stack时, 那么在self.in_stack存在的情况下,self.out_stack需要将self.in_stack.pop()加入
+5. peek: 首先当stack只有一项,即if not self.out_stack时, 那么在self.in_stack存在的情况下,self.out_stack需要将self.in_stack.pop()作为自己的值加入
          因为first-out, 所以返回self.out_stack[-1]
 6. empty: 与one queue的first-in-last-out不同的是,需要判定in和out两个stacks同时满足
           return len(self.in_stack) == 0 and len(self.out_stack) == 0
