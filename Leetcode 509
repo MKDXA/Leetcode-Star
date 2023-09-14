@@ -1,0 +1,9 @@
+Leetcode 509
+1. 斐波那契数列,从第三项开始,每一项都是前两项的和
+2. 方法一: 用a, b代表两个数, 按题意a移动到后一项a = a,后一项等于前两项和b = a + b
+           for i in range(nums): a, b = b, a+ b
+3. 方法二: 用动态规划dp,dp相当于移动箱子
+           dp = [0, 1]这是dp初始值
+           for i in range(2, nums + 1):从第三项开始
+               dp.append(dp[i - 1] + dp[i - 2]) 向dp箱子中加入前一项和前前一项
+           return dp[nums] 结合实际情况返回dp[实际nums]
