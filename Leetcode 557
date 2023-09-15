@@ -1,0 +1,6 @@
+Leetcode 557
+1. 将字符串reverse并以空格拼接
+2. 用split分开字符,分别reverse再拼接
+3. 将字符串以空格分开s = s.split(" ")
+4. 遍历分开后的字符并分别反转 result = [i[::-1] for i in s]
+5. 由于字符串此时处于分开的状态,因此result也是分开的状态,用join函数拼接 return (" ").join(result)
