@@ -1,0 +1,6 @@
+Leetcode 551
+1. 学生签到,一共不能出现两个A且L不能连续出现三次及以上
+2. 整体思想,将LLL看做一个整体,用count处理A的次数
+3. return s.count('A') < 2 and 'LLL' not in s 
+   或return s.count('A') < 2 and s.count('LLL') == 0 
+   判断成立为True
