@@ -1,2 +1,7 @@
 Leetcode 559
-1. 
+1. 寻找N-ary Tree的深度
+2. 如果是空树,深度就是0,if not root: return 0
+3. 迭代法处理, 深度初始值有root,所以depth = 1, 当子节点存在时if root.children
+4. 遍历子节点并迭代,找出最大值并赋予depth
+   depth += max(self.maxDepth(child) for child in root.children)
+5. 返回深度depth
