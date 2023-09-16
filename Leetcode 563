@@ -1,0 +1,12 @@
+Leetcode 563
+1. 迭代左右节点再做差值
+2. 由于tilt需要一次次叠加,所以先设置一个总tilt: self.total_tilt = 0
+3. 内建方法:def calculate_tilt(node)
+                1. 如果节点不存在,返回0
+                2. 某一个节点的左节点部分 left_sum = calculate_tilt(node.left)
+                3. 某一个节点的右节点部分 right_sum = calculate_tilt(node.right)
+                4. tilt就是一个节点左右之和的差值 tilt = abs(left_sum - right_sum)
+                5. 完成一次tilt后加入到selft.total_tilt中 self.total_tilt += tilt
+                6. 经过tilt的处理后,返回左右节点和节点本身的新值 return left_sum + right_sum + node.val
+4. 将root载入calculate_tilt方法中, calculate_tilt(root)
+5. 返回总tilt: return self.total_tilt
