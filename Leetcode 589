@@ -1,0 +1,10 @@
+Leetcode 589
+1. 根据Nary树节点,返回节点值的前序遍历 Preorder Traversal
+2. 先设置preorder方法, def preorder(self, root: 'Node') -> List[int]:
+                       1. 先设置result = []
+                       2. 调用reverse方法 self.reverse(root, result)
+                       3. 返回result
+3. 用递归,设定方法, def traverse(self, root, result):
+                       1. 如果root不存在,直接return
+                       2. result加入root的值 result.append(root.val)
+                       3. 用child遍历root.children, 迭代self.reverse(child, result)
