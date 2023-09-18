@@ -1,3 +1,10 @@
 Leetcode 590
 1. 根据Nary树节点,返回节点值的后序遍历 Postorder Traversal
-2. 
+2. 和前序一样用迭代,但是和postorder并不平行
+3. 先设置result = []
+4. 内建方法def traverse(root):
+           1. 如果没有root,直接返回return
+           2. child遍历root.children, 每次都执行迭代child
+           3. 遍历结束后,向result里添加 result.append(root.val)
+5. 调用traverse方法,代入root
+6. 返回result
