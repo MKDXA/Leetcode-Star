@@ -3,6 +3,6 @@ Leetcode 257
    1. node不存在时,return
    2. 在只有node,没有left和right的情况下,result加入curr + [str(node.val)]
    3. else载入左右节点: 递归builder, node分别是left和right, 用curr接收[str(node.val)]
-2. 实例化, node = root, curr = []
+2. 在实例化中, 变量是node = root, curr = []
 3. 利用*map批量处理('->'.join, result)
 4. 请注意, node节点虽然写着数字但并不等于值,所以在string操作中, 需要第二个变量curr接收node.val,之后string
