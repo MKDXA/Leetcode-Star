@@ -1,7 +1,7 @@
 Leetcode 257
 1. 内建方法def builder(node, curr)
    1. node不存在时,return
-   2. 在只有node,没有left和right的情况下,result加入curr + [str(node.val)]
+   2. 在只有node,没有left和right的情况下,result加入curr + [str(node.val)], 由于curr的格式是list,所以[string]使格式一致
    3. else载入左右节点: 递归builder, node分别是left和right, 用curr接收[str(node.val)]
 2. 在实例化中, root作为node, 同理result作为curr
 3. 利用*map批量处理('->'.join, result)
