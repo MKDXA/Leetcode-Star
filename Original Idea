@@ -1,0 +1,20 @@
+.225
+1. 不知道后进先出如何建立queue
+2. 不知道stack各个功能的具体操作push, pop, top, empty
+
+.226
+1. 不知道如何将左右节点对换,不知道怎么让node向下走
+2. 不知道node之间怎么连接
+3. 迭代法左右节点互换, return root即可
+
+.232
+1. 不知道先进先出如何建立两个stacks
+2. 不知道stack各个功能的操作push, pop, peek, empty
+
+.257
+1. 不知道node怎么下移
+2. 不知道left和right如何在list中分开写
+3. 不知道如何处理null---if not node: return
+4. 不知道如何寻找node的left和right
+
+.
