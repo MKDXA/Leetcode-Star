@@ -16,5 +16,5 @@
 2. 不知道left和right如何在list中分开写
 3. 不知道如何处理null---if not node: return
 4. 不知道如何寻找node的left和right
-
+5. 不知道如何将node本身和值分开
 .
